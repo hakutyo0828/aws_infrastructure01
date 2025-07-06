@@ -1,3 +1,4 @@
+#踏み台サーバー
 resource "aws_instance" "ec2_bastion" {
   ami                                  = "ami-01ead1eca9a200e01"
   associate_public_ip_address          = true
@@ -79,6 +80,7 @@ resource "aws_instance" "ec2_bastion" {
   }
 }
 
+#Web01サーバー
 resource "aws_instance" "ec2_web01" {
   ami                                  = "ami-01ead1eca9a200e01"
   associate_public_ip_address          = false
@@ -160,6 +162,7 @@ resource "aws_instance" "ec2_web01" {
   }
 }
 
+#Web02サーバー
 resource "aws_instance" "ec2_web02" {
   ami                                  = "ami-01ead1eca9a200e01"
   associate_public_ip_address          = false
