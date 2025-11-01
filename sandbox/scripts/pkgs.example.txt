@@ -1,0 +1,4 @@
+# name version-release[.arch]
+curl 7.55.1-8.amzn2.0.1.x86_64
+libcurl 7.55.1-8.amzn2.0.1.x86_64
+
