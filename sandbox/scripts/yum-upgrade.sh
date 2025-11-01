@@ -3,7 +3,7 @@ set -euo pipefail
 
 usage() {
   cat <<'EOF'
-Usage: yum-pin.sh -f pkgs.txt [-l] [--allow-erasing] [--dry-run]
+Usage: yum-upgrade.sh -f pkgs.txt [-l] [--allow-erasing] [--dry-run]
   -f, --file           Package list file. One per line:
                          name version-release[.arch]
                          or name=version-release[.arch]
@@ -107,4 +107,3 @@ for name in "${NAMES[@]}"; do
 done
 set +x
 echo "Done."
-
